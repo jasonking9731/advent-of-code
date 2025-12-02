@@ -1,3 +1,5 @@
+# The following was coded at speed!
+
 def find_repeated_patterns_in_number_range(lbound, ubound):
   invalid_ids = []
 
@@ -35,10 +37,8 @@ def grand_total_invalid_ids_from_range_list(ranges_list):
 
   return grand_total
 
-def part1():
-  with open('input.txt', mode="r", encoding="utf-8") as file:
-    content = file.read()
-    ranges_list = content.split(',')
-    print (grand_total_invalid_ids_from_range_list(ranges_list))
 
-part1()
+with open('input.txt', mode="r", encoding="utf-8") as file:
+  content = file.read()
+  ranges_list = content.split(',')
+  print (grand_total_invalid_ids_from_range_list(ranges_list))
